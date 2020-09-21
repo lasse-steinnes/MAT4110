@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-p = lambda x: np.exp(1) - 3/2 + x
+p = lambda x: (np.exp(1) - 1) + 6*(3-np.exp(1))*(x-1/2)
 f = lambda x: np.exp(x)
 
 # make plot
