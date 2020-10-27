@@ -92,8 +92,9 @@ class Optimize():
 
         E = 1; self.initial_guess(); z = self.z0
         time.clock(); iterations = 0
+        A_inv = np.linalg.inv(self.A);
         while E > tolerance:
-            z_new = np.linalg.solve(self.A,self.b(z))
+            z_new =  A_inv@self.b(z) # np.linalg.solve(self.A,self.b(z))
             E = np.linalg.norm(self.h*(z_new - z))
             z = z_new
             iterations = iterations + 1
@@ -125,7 +126,7 @@ class Optimize():
             E = np.linalg.norm(self.h*(z_new - z))
             z = z_new
             iterations = iterations + 1
-        print("Runtime fixedpointODE: {:.6} ms".format(time.clock()*1000))
+        print("Runtime newtonODE: {:.6} ms".format(time.clock()*1000))
         print("Number of iterations: {:d}\n".format(iterations))
         self.get_x()
         return self.x,z
