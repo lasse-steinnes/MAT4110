@@ -1,6 +1,6 @@
 
 # MAT4110 - Assignment 2: Optimization methods
-Git for Assignment 2 in Introduction to Numerical Analysis at UiO.
+Git for Assignment 2 in Introduction to Numerical Analysis at UiO (MAT4110).
 
 ### Main overview
 * The problem description can be found [here](https://github.com/lasse-steinnes/MAT4110/blob/master/Assignment2/Report/mat4110oblig2.pdf), and the report can be 
