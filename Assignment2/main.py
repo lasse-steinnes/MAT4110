@@ -26,10 +26,14 @@ if int(arg) == 1:
         if i == 0:
             plt.plot(x,ana(x),'-', label = "analytical")
         plt.title("Fixed point method")
-        plt.xlabel("x")
-        plt.ylabel("z")
-        plt.legend()
+        plt.xlabel("x",fontsize = 13)
+        plt.ylabel("z",fontsize = 13)
+        plt.legend(loc = "upper right",fontsize = 15)
+        plt.xticks(fontsize=14)
+        plt.yticks(fontsize=14)
         plt.show()
+
+
 
 # test Newtons method
 elif int(arg) == 2:
@@ -40,9 +44,11 @@ elif int(arg) == 2:
         if i == 0:
             plt.plot(x,ana(x),'-', label = "analytical")
         plt.title("Newtons method")
-        plt.xlabel("x")
-        plt.ylabel("z")
-        plt.legend()
+        plt.xlabel("x",fontsize = 13)
+        plt.ylabel("z",fontsize = 13)
+        plt.legend(loc = "upper right",fontsize = 15)
+        plt.xticks(fontsize=14)
+        plt.yticks(fontsize=14)
         plt.show()
 
 else:
